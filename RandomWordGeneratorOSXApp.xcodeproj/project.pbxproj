@@ -13,6 +13,9 @@
 		70D4E03D1C36E9E6001E0D5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70D4E03B1C36E9E6001E0D5E /* Main.storyboard */; };
 		70D4E0481C36E9E6001E0D5E /* RandomWordGeneratorOSXAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D4E0471C36E9E6001E0D5E /* RandomWordGeneratorOSXAppTests.swift */; };
 		70D4E0531C36E9E6001E0D5E /* RandomWordGeneratorOSXAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D4E0521C36E9E6001E0D5E /* RandomWordGeneratorOSXAppUITests.swift */; };
+		70D4E0611C36EEF8001E0D5E /* CollectSpecifiedCountWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D4E0601C36EEF8001E0D5E /* CollectSpecifiedCountWord.swift */; };
+		70D4E0631C36EF0B001E0D5E /* getWordArrayFromWikipedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D4E0621C36EF0B001E0D5E /* getWordArrayFromWikipedia.swift */; };
+		70D4E0651C36EF69001E0D5E /* AddWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D4E0641C36EF69001E0D5E /* AddWordViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,9 @@
 		70D4E04E1C36E9E6001E0D5E /* RandomWordGeneratorOSXAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandomWordGeneratorOSXAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		70D4E0521C36E9E6001E0D5E /* RandomWordGeneratorOSXAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomWordGeneratorOSXAppUITests.swift; sourceTree = "<group>"; };
 		70D4E0541C36E9E6001E0D5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70D4E0601C36EEF8001E0D5E /* CollectSpecifiedCountWord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectSpecifiedCountWord.swift; sourceTree = "<group>"; };
+		70D4E0621C36EF0B001E0D5E /* getWordArrayFromWikipedia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = getWordArrayFromWikipedia.swift; sourceTree = "<group>"; };
+		70D4E0641C36EF69001E0D5E /* AddWordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddWordViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,9 @@
 				70D4E0371C36E9E5001E0D5E /* ViewController.swift */,
 				70D4E0391C36E9E5001E0D5E /* Assets.xcassets */,
 				70D4E03B1C36E9E6001E0D5E /* Main.storyboard */,
+				70D4E0641C36EF69001E0D5E /* AddWordViewController.swift */,
+				70D4E0601C36EEF8001E0D5E /* CollectSpecifiedCountWord.swift */,
+				70D4E0621C36EF0B001E0D5E /* getWordArrayFromWikipedia.swift */,
 				70D4E03E1C36E9E6001E0D5E /* Info.plist */,
 			);
 			path = RandomWordGeneratorOSXApp;
@@ -252,8 +261,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70D4E0651C36EF69001E0D5E /* AddWordViewController.swift in Sources */,
+				70D4E0631C36EF0B001E0D5E /* getWordArrayFromWikipedia.swift in Sources */,
 				70D4E0381C36E9E5001E0D5E /* ViewController.swift in Sources */,
 				70D4E0361C36E9E5001E0D5E /* AppDelegate.swift in Sources */,
+				70D4E0611C36EEF8001E0D5E /* CollectSpecifiedCountWord.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
