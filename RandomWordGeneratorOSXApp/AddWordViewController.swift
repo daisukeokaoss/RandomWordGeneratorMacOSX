@@ -19,12 +19,18 @@ class AddWordViewController: NSViewController {
             myPopup.messageText = question
             myPopup.informativeText = text
             myPopup.alertStyle = NSAlertStyle.WarningAlertStyle
+            let textField = NSTextField(frame: NSRect(x:0,y: 0,width:  200,height:  24))
 
-            myPopup.accessoryView = NSTextField(frame: NSRect(x:0,y: 0,width:  200,height:  24))
+            myPopup.accessoryView = textField
             myPopup.addButtonWithTitle("OK")
             myPopup.addButtonWithTitle("Cancel")
             let res = myPopup.runModal()
             if res == NSAlertFirstButtonReturn {
+                print((myPopup.accessoryView as! NSTextField).stringValue)
+                print("FirstButton")
+                return true
+            }else if res == NSAlertSecondButtonReturn{
+                print("SecondButton")
                 return true
             }
             return false
