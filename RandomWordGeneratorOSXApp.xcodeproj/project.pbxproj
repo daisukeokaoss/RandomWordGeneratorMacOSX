@@ -18,6 +18,9 @@
 		70D4E0651C36EF69001E0D5E /* AddWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D4E0641C36EF69001E0D5E /* AddWordViewController.swift */; };
 		70D4E0671C37FD47001E0D5E /* StatusTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D4E0661C37FD47001E0D5E /* StatusTextField.swift */; };
 		70D4E0691C3827A5001E0D5E /* AddWordViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D4E0681C3827A5001E0D5E /* AddWordViewController2.swift */; };
+		70D4E06B1C3831FF001E0D5E /* ChemicalJPDefaultWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D4E06A1C3831FF001E0D5E /* ChemicalJPDefaultWord.swift */; };
+		70D4E06D1C3832FF001E0D5E /* MathematicalJpDefaultWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D4E06C1C3832FF001E0D5E /* MathematicalJpDefaultWord.swift */; };
+		70D4E06F1C3833A3001E0D5E /* PhysicalJpDefaultWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D4E06E1C3833A3001E0D5E /* PhysicalJpDefaultWord.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,9 @@
 		70D4E0641C36EF69001E0D5E /* AddWordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddWordViewController.swift; sourceTree = "<group>"; };
 		70D4E0661C37FD47001E0D5E /* StatusTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusTextField.swift; sourceTree = "<group>"; };
 		70D4E0681C3827A5001E0D5E /* AddWordViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddWordViewController2.swift; sourceTree = "<group>"; };
+		70D4E06A1C3831FF001E0D5E /* ChemicalJPDefaultWord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChemicalJPDefaultWord.swift; sourceTree = "<group>"; };
+		70D4E06C1C3832FF001E0D5E /* MathematicalJpDefaultWord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathematicalJpDefaultWord.swift; sourceTree = "<group>"; };
+		70D4E06E1C3833A3001E0D5E /* PhysicalJpDefaultWord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhysicalJpDefaultWord.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +115,9 @@
 				70D4E0371C36E9E5001E0D5E /* ViewController.swift */,
 				70D4E0391C36E9E5001E0D5E /* Assets.xcassets */,
 				70D4E03B1C36E9E6001E0D5E /* Main.storyboard */,
+				70D4E06A1C3831FF001E0D5E /* ChemicalJPDefaultWord.swift */,
+				70D4E06E1C3833A3001E0D5E /* PhysicalJpDefaultWord.swift */,
+				70D4E06C1C3832FF001E0D5E /* MathematicalJpDefaultWord.swift */,
 				70D4E0681C3827A5001E0D5E /* AddWordViewController2.swift */,
 				70D4E0661C37FD47001E0D5E /* StatusTextField.swift */,
 				70D4E0641C36EF69001E0D5E /* AddWordViewController.swift */,
@@ -267,6 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70D4E06D1C3832FF001E0D5E /* MathematicalJpDefaultWord.swift in Sources */,
 				70D4E0691C3827A5001E0D5E /* AddWordViewController2.swift in Sources */,
 				70D4E0651C36EF69001E0D5E /* AddWordViewController.swift in Sources */,
 				70D4E0631C36EF0B001E0D5E /* getWordArrayFromWikipedia.swift in Sources */,
@@ -274,6 +284,8 @@
 				70D4E0671C37FD47001E0D5E /* StatusTextField.swift in Sources */,
 				70D4E0361C36E9E5001E0D5E /* AppDelegate.swift in Sources */,
 				70D4E0611C36EEF8001E0D5E /* CollectSpecifiedCountWord.swift in Sources */,
+				70D4E06F1C3833A3001E0D5E /* PhysicalJpDefaultWord.swift in Sources */,
+				70D4E06B1C3831FF001E0D5E /* ChemicalJPDefaultWord.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

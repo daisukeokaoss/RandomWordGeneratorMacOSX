@@ -185,20 +185,20 @@
                                     <action selector="AddWordSet:" target="sOX-ol-eHW" id="wbu-sb-ePo"/>
                                 </connections>
                             </button>
-                            <scrollView wantsLayer="YES" fixedFrame="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uNt-od-xk9">
-                                <rect key="frame" x="111" y="92" width="240" height="135"/>
+                            <scrollView wantsLayer="YES" ambiguous="YES" misplaced="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uNt-od-xk9">
+                                <rect key="frame" x="0.0" y="0.0" width="450" height="251"/>
                                 <clipView key="contentView" ambiguous="YES" id="C4C-UR-6q5">
-                                    <rect key="frame" x="1" y="1" width="238" height="133"/>
+                                    <rect key="frame" x="1" y="1" width="448" height="249"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <textView ambiguous="YES" importsGraphics="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="GoZ-nH-2C7">
-                                            <rect key="frame" x="0.0" y="0.0" width="238" height="133"/>
+                                        <textView ambiguous="YES" editable="NO" importsGraphics="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="GoZ-nH-2C7">
+                                            <rect key="frame" x="0.0" y="0.0" width="448" height="249"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <size key="minSize" width="238" height="133"/>
+                                            <size key="minSize" width="448" height="249"/>
                                             <size key="maxSize" width="463" height="10000000"/>
                                             <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                            <size key="minSize" width="238" height="133"/>
+                                            <size key="minSize" width="448" height="249"/>
                                             <size key="maxSize" width="463" height="10000000"/>
                                         </textView>
                                     </subviews>
@@ -209,11 +209,16 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="9Qb-mX-p4C">
-                                    <rect key="frame" x="223" y="1" width="16" height="133"/>
+                                    <rect key="frame" x="433" y="1" width="16" height="249"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="uNt-od-xk9" firstAttribute="leading" secondItem="9s0-Qd-oHA" secondAttribute="leading" id="AAX-pG-gUy"/>
+                            <constraint firstAttribute="bottom" secondItem="uNt-od-xk9" secondAttribute="bottom" id="CPc-CA-LzC"/>
+                            <constraint firstAttribute="trailing" secondItem="uNt-od-xk9" secondAttribute="trailing" id="k9h-N2-St0"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="myStatusTextView" destination="GoZ-nH-2C7" id="oN5-2y-C1u"/>
@@ -221,7 +226,7 @@
                 </viewController>
                 <customObject id="O5d-sd-JNS" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="712" y="686"/>
+            <point key="canvasLocation" x="705" y="779"/>
         </scene>
         <!--Other-->
         <scene sceneID="QNe-LG-FxM">
