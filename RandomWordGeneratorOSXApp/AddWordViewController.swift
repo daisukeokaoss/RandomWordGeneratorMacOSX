@@ -11,10 +11,14 @@ import Cocoa
 
 
 class AddWordViewController: NSViewController {
+   
+
+
+    @IBOutlet var myStatusTextField: StatusTextField!
 
     @IBAction func AddWordClick(sender: NSButton) {
         sender.title = "キャンセル"
-        func dialogOKCancel(question: String, text: String) -> Bool {
+        func dialogOKCancel(question: String, text: String) -> String {
             let myPopup: NSAlert = NSAlert()
             myPopup.messageText = question
             myPopup.informativeText = text
@@ -28,15 +32,26 @@ class AddWordViewController: NSViewController {
             if res == NSAlertFirstButtonReturn {
                 print((myPopup.accessoryView as! NSTextField).stringValue)
                 print("FirstButton")
-                return true
+                return (myPopup.accessoryView as! NSTextField).stringValue
             }else if res == NSAlertSecondButtonReturn{
                 print("SecondButton")
-                return true
+                return ""
             }
-            return false
+            return ""
         }
         
-        let answer = dialogOKCancel("Ok?", text: "Choose your answer.")
+        let answer = dialogOKCancel("Ok?", text: "単語を入力してください")
+        
+        if(answer == ""){
+            print("canceled")
+            return
+        }
+        
+        //以下、ワード収集
+
+        self.myStatusTextField.string = answer
+        
+        
         //Debug.WriteLine(name);
     }
 }
