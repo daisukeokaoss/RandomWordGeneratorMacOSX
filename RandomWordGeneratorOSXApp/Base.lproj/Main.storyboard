@@ -170,8 +170,8 @@
         <!--Download-->
         <scene sceneID="23o-7z-c2I">
             <objects>
-                <viewController title="Download" id="sOX-ol-eHW" customClass="AddWordViewController" customModule="RandomWordGeneratorOSXApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" id="9s0-Qd-oHA">
+                <viewController title="Download" id="sOX-ol-eHW" customClass="AddWordViewController2" customModule="RandomWordGeneratorOSXApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" wantsLayer="YES" id="9s0-Qd-oHA">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
@@ -182,16 +182,16 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
-                                    <action selector="AddWordClick:" target="sOX-ol-eHW" id="P4c-MT-Bi9"/>
+                                    <action selector="AddWordSet:" target="sOX-ol-eHW" id="wbu-sb-ePo"/>
                                 </connections>
                             </button>
-                            <scrollView fixedFrame="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OAX-1b-ByK">
-                                <rect key="frame" x="58" y="104" width="240" height="135"/>
-                                <clipView key="contentView" ambiguous="YES" id="grh-bU-ZLr">
+                            <scrollView wantsLayer="YES" fixedFrame="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uNt-od-xk9">
+                                <rect key="frame" x="111" y="92" width="240" height="135"/>
+                                <clipView key="contentView" ambiguous="YES" id="C4C-UR-6q5">
                                     <rect key="frame" x="1" y="1" width="238" height="133"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <textView ambiguous="YES" importsGraphics="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="2iP-Fh-vmG" customClass="StatusTextField" customModule="RandomWordGeneratorOSXApp" customModuleProvider="target">
+                                        <textView ambiguous="YES" importsGraphics="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="GoZ-nH-2C7">
                                             <rect key="frame" x="0.0" y="0.0" width="238" height="133"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -204,25 +204,24 @@
                                     </subviews>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </clipView>
-                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="F4F-Ln-lZe">
+                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="Oqy-vW-bVH">
                                     <rect key="frame" x="-100" y="-100" width="87" height="18"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
-                                <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="q1k-dr-RQB">
+                                <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="9Qb-mX-p4C">
                                     <rect key="frame" x="223" y="1" width="16" height="133"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
-                                <accessibility description="aaaa"/>
                             </scrollView>
                         </subviews>
                     </view>
                     <connections>
-                        <outlet property="myStatusTextField" destination="2iP-Fh-vmG" id="OWZ-Hd-xhw"/>
+                        <outlet property="myStatusTextView" destination="GoZ-nH-2C7" id="oN5-2y-C1u"/>
                     </connections>
                 </viewController>
                 <customObject id="O5d-sd-JNS" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="665" y="811"/>
+            <point key="canvasLocation" x="712" y="686"/>
         </scene>
         <!--Other-->
         <scene sceneID="QNe-LG-FxM">
