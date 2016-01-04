@@ -10,11 +10,17 @@ import Cocoa
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
+    
+    
+    var SetOfWordArray = Array<OneWordSetStorage>()
+    
+    var setting = SaveLoadSetting()
 
 
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         // Insert code here to initialize your application
+        setting.LoadSetting()
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {

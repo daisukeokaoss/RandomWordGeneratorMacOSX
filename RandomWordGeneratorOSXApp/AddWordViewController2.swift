@@ -114,7 +114,7 @@ class AddWordViewController2: NSViewController {
                 let res = myPopup.runModal()
                 if res == NSAlertFirstButtonReturn {
                     //単語を加える
-                    
+                    self.RegisterWordArray(wordArray, seedWord: answer)
                 }else if res == NSAlertSecondButtonReturn{
                     
                 }
@@ -142,5 +142,20 @@ class AddWordViewController2: NSViewController {
             self.myStatusTextView.string?.appendContentsOf("「\(result)」の関連ワードを取得しました\n")
             self.myStatusTextView.string?.appendContentsOf(String("\(count)個のワードを取得しました\n"))
         }
+    }
+    
+    func RegisterWordArray(wordArray:Array<String>,seedWord:String)
+    {
+        print("Registered")
+        
+        let appdelegate:AppDelegate = NSApplication.sharedApplication().delegate as! AppDelegate
+        
+        let addWordset = OneWordSetStorage()
+        
+        addWordset.CaptionString = seedWord
+        addWordset.wordSetArray = wordArray
+        
+        appdelegate.SetOfWordArray.append(addWordset)
+        
     }
 }

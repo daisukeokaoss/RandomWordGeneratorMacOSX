@@ -259,6 +259,9 @@
                             </scrollView>
                         </subviews>
                     </view>
+                    <connections>
+                        <outlet property="myWordSetScrollView" destination="xDL-0W-raB" id="HaE-xe-zuK"/>
+                    </connections>
                 </viewController>
                 <customObject id="wJq-rv-mvb" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>

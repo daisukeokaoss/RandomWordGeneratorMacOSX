@@ -22,6 +22,8 @@
 		70D4E06D1C3832FF001E0D5E /* MathematicalJpDefaultWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D4E06C1C3832FF001E0D5E /* MathematicalJpDefaultWord.swift */; };
 		70D4E06F1C3833A3001E0D5E /* PhysicalJpDefaultWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D4E06E1C3833A3001E0D5E /* PhysicalJpDefaultWord.swift */; };
 		70D4E0711C3845F3001E0D5E /* WordSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D4E0701C3845F3001E0D5E /* WordSelectionViewController.swift */; };
+		70D4E0741C3A7449001E0D5E /* OneWordSetStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D4E0721C3A7449001E0D5E /* OneWordSetStorage.swift */; };
+		70D4E0771C3A75E7001E0D5E /* SaveLoadSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D4E0761C3A75E7001E0D5E /* SaveLoadSetting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		70D4E06C1C3832FF001E0D5E /* MathematicalJpDefaultWord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathematicalJpDefaultWord.swift; sourceTree = "<group>"; };
 		70D4E06E1C3833A3001E0D5E /* PhysicalJpDefaultWord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhysicalJpDefaultWord.swift; sourceTree = "<group>"; };
 		70D4E0701C3845F3001E0D5E /* WordSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordSelectionViewController.swift; sourceTree = "<group>"; };
+		70D4E0721C3A7449001E0D5E /* OneWordSetStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneWordSetStorage.swift; sourceTree = "<group>"; };
+		70D4E0761C3A75E7001E0D5E /* SaveLoadSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveLoadSetting.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,10 +122,12 @@
 				70D4E0391C36E9E5001E0D5E /* Assets.xcassets */,
 				70D4E03B1C36E9E6001E0D5E /* Main.storyboard */,
 				70D4E0701C3845F3001E0D5E /* WordSelectionViewController.swift */,
+				70D4E0721C3A7449001E0D5E /* OneWordSetStorage.swift */,
 				70D4E06A1C3831FF001E0D5E /* ChemicalJPDefaultWord.swift */,
 				70D4E06E1C3833A3001E0D5E /* PhysicalJpDefaultWord.swift */,
 				70D4E06C1C3832FF001E0D5E /* MathematicalJpDefaultWord.swift */,
 				70D4E0681C3827A5001E0D5E /* AddWordViewController2.swift */,
+				70D4E0761C3A75E7001E0D5E /* SaveLoadSetting.swift */,
 				70D4E0661C37FD47001E0D5E /* StatusTextField.swift */,
 				70D4E0641C36EF69001E0D5E /* AddWordViewController.swift */,
 				70D4E0601C36EEF8001E0D5E /* CollectSpecifiedCountWord.swift */,
@@ -280,6 +286,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				70D4E06D1C3832FF001E0D5E /* MathematicalJpDefaultWord.swift in Sources */,
+				70D4E0771C3A75E7001E0D5E /* SaveLoadSetting.swift in Sources */,
+				70D4E0741C3A7449001E0D5E /* OneWordSetStorage.swift in Sources */,
 				70D4E0691C3827A5001E0D5E /* AddWordViewController2.swift in Sources */,
 				70D4E0651C36EF69001E0D5E /* AddWordViewController.swift in Sources */,
 				70D4E0631C36EF0B001E0D5E /* getWordArrayFromWikipedia.swift in Sources */,
