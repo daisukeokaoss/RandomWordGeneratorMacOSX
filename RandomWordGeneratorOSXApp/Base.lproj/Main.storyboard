@@ -197,6 +197,9 @@
                                                                     <buttonCell key="cell" type="check" bezelStyle="regularSquare" imagePosition="left" alignment="left" state="on" identifier="colCheckbox" inset="2" id="fiv-dV-4b8">
                                                                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                                         <font key="font" metaFont="system"/>
+                                                                        <connections>
+                                                                            <action selector="CheckButtonClicked:" target="R9w-g4-CyC" id="3nm-nd-U7v"/>
+                                                                        </connections>
                                                                     </buttonCell>
                                                                 </button>
                                                             </subviews>

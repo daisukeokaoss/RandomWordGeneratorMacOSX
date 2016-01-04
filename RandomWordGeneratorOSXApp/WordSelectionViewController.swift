@@ -118,7 +118,18 @@ class WordSelectionViewController: NSViewController,NSTableViewDataSource,NSTabl
     }
     
 
-    
+    @IBAction func CheckButtonClicked(sender: AnyObject) {
+        let appdelegate:AppDelegate = NSApplication.sharedApplication().delegate as! AppDelegate
+        
+        if(sender.state == NSOnState){
+            appdelegate.SetOfWordArray[sender.tag()].Enable = true
+        }else{
+            appdelegate.SetOfWordArray[sender.tag()].Enable = false
+        }
+        
+        
+    }
+
 
 
     
