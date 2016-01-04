@@ -13,18 +13,22 @@ class WordSelectionViewController: NSViewController,NSTableViewDataSource,NSTabl
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
+        
+        
+        
+        
        
     }
     
-    @IBOutlet weak var myWordCollectionTableView: NSTableView!
-   /* func numberOfRowsInTableView(aTableView: NSTableView!) -> Int
+    //@IBOutlet weak var myWordCollectionTableView: NSTableView!
+    func numberOfRowsInTableView(aTableView: NSTableView) -> Int
     {
         return 20
-    }*/
-    
-    func numberOfRowsInTableView(tableView: NSTableView) -> Int {
-        return 20
     }
+    
+
+    
+    
     @IBOutlet weak var MyTableView: NSScrollView!
     
    /* func tableView(tableView: NSTableView!, objectValueForTableColumn tableColumn: NSTableColumn!, row: Int) -> AnyObject!
@@ -35,8 +39,55 @@ class WordSelectionViewController: NSViewController,NSTableViewDataSource,NSTabl
         return "ああああああ";
     }*/
     
-    func tableView(tableView: NSTableView, objectValueForTableColumn tableColumn: NSTableColumn?, row: Int) -> AnyObject? {
-        return "オオおおおお"
+   /* func tableView(tableView: NSTableView, viewForTableColumn tableColumn: NSTableColumn?, row: Int) -> NSView? {
+        //if(tableColumn?.identifier == "EnableDisableCheckCol"){
+            
+            //var cellView = tableView.makeViewWithIdentifier("EnableDisableCheck", owner: MyTableView) as! NSButtonCell
+            
+            var cellView = tableView.makeViewWithIdentifier("EnableDisableCheck", owner: self) as! NSTableCellView
+            
+            
+            cellView.textField?.stringValue = "おおおおおおおおおおおお"
+            return cellView
+        /*}else if(tableColumn?.identifier == "WordSetCaptionCol"){
+            var cellView = tableView.makeViewWithIdentifier("WordSetCaption", owner: self) as! NSTableCellView
+            cellView.textField?.stringValue = "iiiiiii"
+            return cellView
+        }
+        return nil*/
+    }*/
+    
+    func tableView(tableView: NSTableView, viewForTableColumn tableColumn: NSTableColumn?, row: Int) -> NSView? {
+        if tableColumn!.identifier == "colCheckbox" {
+            
+            //var cellView = tableView.makeViewWithIdentifier(tableColumn!.identifier, owner: self) as! NSButton;
+            let cellView: NSTableCellView = tableView.makeViewWithIdentifier(tableColumn!.identifier, owner: self) as! NSTableCellView;
+            let btn = cellView.subviews[0] as! NSButton;
+            btn.tag = row;
+            btn.state = NSOffState
+            return cellView;
+            
+        }else if tableColumn!.identifier == "CaptionOfWordSet" {
+            var cellView = tableView.makeViewWithIdentifier(tableColumn!.identifier, owner: self) as! NSTableCellView;
+            cellView.textField?.stringValue = "ppppppp"
+            return cellView;
+            
+        }
+        return nil
     }
+    
+    func tableView(tableView: NSTableView, objectValueForTableColumn tableColumn: NSTableColumn?, row: Int) -> AnyObject? {
+
+        
+   
+        
+        //tableView.
+        return "bbbbb"
+    }
+    
+
+    
+
+
     
 }
