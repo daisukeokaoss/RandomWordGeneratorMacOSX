@@ -104,6 +104,7 @@ class WordSelectionViewController: NSViewController,NSTableViewDataSource,NSTabl
             cellView.textField?.stringValue = appdelegate.SetOfWordArray[row].CaptionString
             return cellView;
             
+            
         }
         return nil
     }
