@@ -144,11 +144,50 @@
         <!--WordGenerate-->
         <scene sceneID="yDU-D8-lEC">
             <objects>
-                <viewController title="WordGenerate" id="Rzv-Mo-ggS" sceneMemberID="viewController">
+                <viewController title="WordGenerate" id="Rzv-Mo-ggS" customClass="WordPlotViewController" customModule="RandomWordGeneratorOSXApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="4gs-As-qyd">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zDa-Xy-vqr">
+                                <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                                <clipView key="contentView" id="iaZ-rU-NsQ">
+                                    <rect key="frame" x="1" y="1" width="448" height="298"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textView editable="NO" importsGraphics="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="niB-SZ-QC2">
+                                            <rect key="frame" x="0.0" y="0.0" width="448" height="298"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <size key="minSize" width="448" height="298"/>
+                                            <size key="maxSize" width="463" height="10000000"/>
+                                            <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                            <size key="minSize" width="448" height="298"/>
+                                            <size key="maxSize" width="463" height="10000000"/>
+                                        </textView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </clipView>
+                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="aUn-gb-2t4">
+                                    <rect key="frame" x="-100" y="-100" width="87" height="18"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="G7j-hh-JtI">
+                                    <rect key="frame" x="433" y="1" width="16" height="298"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="zDa-Xy-vqr" firstAttribute="leading" secondItem="4gs-As-qyd" secondAttribute="leading" id="SlI-k4-3mY"/>
+                            <constraint firstItem="zDa-Xy-vqr" firstAttribute="top" secondItem="4gs-As-qyd" secondAttribute="top" id="hug-3o-rir"/>
+                            <constraint firstAttribute="bottom" secondItem="zDa-Xy-vqr" secondAttribute="bottom" id="mpd-OJ-fEL"/>
+                            <constraint firstAttribute="trailing" secondItem="zDa-Xy-vqr" secondAttribute="trailing" id="uXo-DP-atr"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="myTextView" destination="niB-SZ-QC2" id="uK4-NN-V52"/>
+                    </connections>
                 </viewController>
                 <customObject id="Wme-vY-d5P" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -165,11 +204,11 @@
                             <scrollView fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xDL-0W-raB">
                                 <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                                 <clipView key="contentView" ambiguous="YES" id="jPL-CZ-qR5">
-                                    <rect key="frame" x="1" y="23" width="448" height="276"/>
+                                    <rect key="frame" x="1" y="0.0" width="448" height="299"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" headerView="hIJ-1D-40d" viewBased="YES" id="bDB-dR-2vc">
-                                            <rect key="frame" x="0.0" y="0.0" width="448" height="276"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="456" height="276"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
                                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -206,7 +245,7 @@
                                                         </tableCellView>
                                                     </prototypeCellViews>
                                                 </tableColumn>
-                                                <tableColumn identifier="CaptionOfWordSet" width="326" minWidth="40" maxWidth="1000" id="bhB-R3-Gic">
+                                                <tableColumn identifier="CaptionOfWordSet" width="430" minWidth="40" maxWidth="1000" id="bhB-R3-Gic">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -220,7 +259,7 @@
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <prototypeCellViews>
                                                         <tableCellView id="8yA-Lp-6xH">
-                                                            <rect key="frame" x="24" y="1" width="326" height="17"/>
+                                                            <rect key="frame" x="24" y="1" width="430" height="17"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
                                                                 <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9pU-bp-bwx">
@@ -247,16 +286,16 @@
                                     </subviews>
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </clipView>
-                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="c9Q-w1-VT6">
-                                    <rect key="frame" x="1" y="117.71612447500229" width="237.37351608276367" height="16"/>
+                                <scroller key="horizontalScroller" verticalHuggingPriority="750" horizontal="YES" id="c9Q-w1-VT6">
+                                    <rect key="frame" x="1" y="283" width="448" height="16"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
-                                <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="OgF-xI-4Vi">
+                                <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="OgF-xI-4Vi">
                                     <rect key="frame" x="224" y="17" width="15" height="102"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <tableHeaderView key="headerView" id="hIJ-1D-40d">
-                                    <rect key="frame" x="0.0" y="0.0" width="448" height="23"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="456" height="23"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableHeaderView>
                             </scrollView>
@@ -264,6 +303,7 @@
                     </view>
                     <connections>
                         <outlet property="myWordSetScrollView" destination="xDL-0W-raB" id="HaE-xe-zuK"/>
+                        <outlet property="myWordSetTableView" destination="bDB-dR-2vc" id="5oo-Ro-lYa"/>
                     </connections>
                 </viewController>
                 <customObject id="wJq-rv-mvb" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -311,7 +351,7 @@
                                     <rect key="frame" x="-100" y="-100" width="87" height="18"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
-                                <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="9Qb-mX-p4C">
+                                <scroller key="verticalScroller" verticalHuggingPriority="750" horizontal="NO" id="9Qb-mX-p4C">
                                     <rect key="frame" x="433" y="1" width="16" height="249"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>

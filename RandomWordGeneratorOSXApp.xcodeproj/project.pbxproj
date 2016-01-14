@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		70329CB61C47CE700053D788 /* WordPlotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70329CB51C47CE700053D788 /* WordPlotViewController.swift */; };
 		70D4E0361C36E9E5001E0D5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D4E0351C36E9E5001E0D5E /* AppDelegate.swift */; };
 		70D4E0381C36E9E5001E0D5E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D4E0371C36E9E5001E0D5E /* ViewController.swift */; };
 		70D4E03A1C36E9E5001E0D5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70D4E0391C36E9E5001E0D5E /* Assets.xcassets */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		70329CB51C47CE700053D788 /* WordPlotViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordPlotViewController.swift; sourceTree = "<group>"; };
 		70D4E0321C36E9E5001E0D5E /* RandomWordGeneratorOSXApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomWordGeneratorOSXApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70D4E0351C36E9E5001E0D5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70D4E0371C36E9E5001E0D5E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				70D4E0371C36E9E5001E0D5E /* ViewController.swift */,
 				70D4E0391C36E9E5001E0D5E /* Assets.xcassets */,
 				70D4E03B1C36E9E6001E0D5E /* Main.storyboard */,
+				70329CB51C47CE700053D788 /* WordPlotViewController.swift */,
 				70D4E0701C3845F3001E0D5E /* WordSelectionViewController.swift */,
 				70D4E0721C3A7449001E0D5E /* OneWordSetStorage.swift */,
 				70D4E06A1C3831FF001E0D5E /* ChemicalJPDefaultWord.swift */,
@@ -290,6 +293,7 @@
 				70D4E0741C3A7449001E0D5E /* OneWordSetStorage.swift in Sources */,
 				70D4E0691C3827A5001E0D5E /* AddWordViewController2.swift in Sources */,
 				70D4E0651C36EF69001E0D5E /* AddWordViewController.swift in Sources */,
+				70329CB61C47CE700053D788 /* WordPlotViewController.swift in Sources */,
 				70D4E0631C36EF0B001E0D5E /* getWordArrayFromWikipedia.swift in Sources */,
 				70D4E0381C36E9E5001E0D5E /* ViewController.swift in Sources */,
 				70D4E0671C37FD47001E0D5E /* StatusTextField.swift in Sources */,
@@ -519,6 +523,7 @@
 				70D4E0591C36E9E6001E0D5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		70D4E05A1C36E9E6001E0D5E /* Build configuration list for PBXNativeTarget "RandomWordGeneratorOSXAppTests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +532,7 @@
 				70D4E05C1C36E9E6001E0D5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		70D4E05D1C36E9E6001E0D5E /* Build configuration list for PBXNativeTarget "RandomWordGeneratorOSXAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -535,6 +541,7 @@
 				70D4E05F1C36E9E6001E0D5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

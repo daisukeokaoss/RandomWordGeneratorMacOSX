@@ -10,6 +10,7 @@ import Cocoa
 
 class WordSelectionViewController: NSViewController,NSTableViewDataSource,NSTableViewDelegate {
 
+    @IBOutlet weak var myWordSetTableView: NSTableView!
     @IBOutlet weak var myWordSetScrollView: NSScrollView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +27,7 @@ class WordSelectionViewController: NSViewController,NSTableViewDataSource,NSTabl
     
     override func viewDidAppear() {
         super.viewDidAppear()
-        
+        self.myWordSetTableView.reloadData()
         
     }
     
