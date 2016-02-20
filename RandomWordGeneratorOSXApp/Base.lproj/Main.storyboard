@@ -200,9 +200,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <scrollView fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xDL-0W-raB">
+                            <scrollView autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xDL-0W-raB">
                                 <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
-                                <clipView key="contentView" ambiguous="YES" id="jPL-CZ-qR5">
+                                <clipView key="contentView" id="jPL-CZ-qR5">
                                     <rect key="frame" x="1" y="0.0" width="448" height="299"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
@@ -299,6 +299,12 @@
                                 </tableHeaderView>
                             </scrollView>
                         </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="xDL-0W-raB" secondAttribute="bottom" id="1Zb-yT-Hh2"/>
+                            <constraint firstItem="xDL-0W-raB" firstAttribute="leading" secondItem="696-9Q-2YO" secondAttribute="leading" id="Cdp-Gw-H3c"/>
+                            <constraint firstItem="xDL-0W-raB" firstAttribute="top" secondItem="696-9Q-2YO" secondAttribute="top" id="S5f-b8-ky6"/>
+                            <constraint firstAttribute="trailing" secondItem="xDL-0W-raB" secondAttribute="trailing" id="kJ6-e3-ilB"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="myWordSetScrollView" destination="xDL-0W-raB" id="HaE-xe-zuK"/>
