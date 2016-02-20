@@ -19,12 +19,23 @@ class AddWordViewController2: NSViewController {
   
     @IBOutlet var myStatusTextView: NSTextView!
     
-    var CancelFlag = true
+    var CancelFlag = false
+    var wordCollectionFailedFlag = false
 
     
     @IBAction func AddWordSet(sender: NSButton) {
         
+        if(self.CancelFlag == true){
+            let n : NSNotification = NSNotification(name: "killProcess", object: self)
+            //通知を送る
+            NSNotificationCenter.defaultCenter().postNotification(n)
+            self.CancelFlag = false
+            sender.title = "Word追加"
+            return
+        }
+        
         sender.title = "キャンセル"
+        self.CancelFlag = true
         func dialogOKCancel(question: String, text: String) -> String {
             let myPopup: NSAlert = NSAlert()
             myPopup.messageText = question
@@ -78,6 +89,7 @@ class AddWordViewController2: NSViewController {
                     let myPopup: NSAlert = NSAlert()
                     myPopup.messageText = "確認"
                     myPopup.informativeText = "ワードが収集できませんでした"
+                    self.wordCollectionFailedFlag = true
                     myPopup.alertStyle = NSAlertStyle.WarningAlertStyle
 
                     myPopup.addButtonWithTitle("OK")
@@ -89,9 +101,10 @@ class AddWordViewController2: NSViewController {
                     
                     }
                     
-                    sender.stringValue = "単語を加える"
+                    sender.stringValue = "Word追加"
                     
-                    self.CancelFlag = true
+                    self.CancelFlag = false
+                    return
                     
                     
                 })
@@ -104,6 +117,12 @@ class AddWordViewController2: NSViewController {
                 self.myStatusTextView.string?.appendContentsOf("\(wordArray)")
                 
                 print(wordArray)
+                if(self.wordCollectionFailedFlag == true){
+                    self.wordCollectionFailedFlag = false
+                    self.CancelFlag = false
+                    sender.title = "Word追加"
+                    return
+                }
                 
                 
                 let myPopup: NSAlert = NSAlert()
@@ -120,7 +139,7 @@ class AddWordViewController2: NSViewController {
                     
                 }
             
-                self.CancelFlag = true
+                self.CancelFlag = false
                 sender.title = "Word追加"
                 
                 
