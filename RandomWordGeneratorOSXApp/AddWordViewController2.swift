@@ -42,6 +42,7 @@ class AddWordViewController2: NSViewController {
                 return (myPopup.accessoryView as! NSTextField).stringValue
             }else if res == NSAlertSecondButtonReturn{
                 print("SecondButton")
+                sender.title = "Word追加"
                 return ""
             }
             return ""
@@ -120,6 +121,7 @@ class AddWordViewController2: NSViewController {
                 }
             
                 self.CancelFlag = true
+                sender.title = "Word追加"
                 
                 
             })

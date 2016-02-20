@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="zOb-g1-G81">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="zOb-g1-G81">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9531"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9532"/>
+        <capability name="stacking Non-gravity area distributions on NSStackView" minToolsVersion="7.0" minSystemVersion="10.11"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -122,7 +123,6 @@
                         <tabViewItem identifier="" id="Zpo-5B-AqS"/>
                         <tabViewItem identifier="" id="zF7-U0-YPe"/>
                         <tabViewItem id="Bsv-h9-EbB"/>
-                        <tabViewItem id="5Ok-oj-4zd"/>
                     </tabViewItems>
                     <tabView key="tabView" type="noTabsNoBorder" id="XAJ-Pn-la0">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
@@ -134,7 +134,6 @@
                         <segue destination="Rzv-Mo-ggS" kind="relationship" relationship="tabItems" id="Bqf-gp-sXi"/>
                         <segue destination="R9w-g4-CyC" kind="relationship" relationship="tabItems" id="msl-We-2nI"/>
                         <segue destination="sOX-ol-eHW" kind="relationship" relationship="tabItems" id="j6U-Mw-5Pc"/>
-                        <segue destination="4Hc-Qq-rsO" kind="relationship" relationship="tabItems" id="lgu-i1-143"/>
                     </connections>
                 </tabViewController>
                 <customObject id="ZFT-Wf-3Kp" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -318,16 +317,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Hb-Hc-oUK">
-                                <rect key="frame" x="177" y="252" width="97" height="32"/>
-                                <buttonCell key="cell" type="push" title="Word追加" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="UVh-zY-BjV">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="AddWordSet:" target="sOX-ol-eHW" id="wbu-sb-ePo"/>
-                                </connections>
-                            </button>
                             <scrollView wantsLayer="YES" ambiguous="YES" misplaced="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uNt-od-xk9">
                                 <rect key="frame" x="0.0" y="0.0" width="450" height="251"/>
                                 <clipView key="contentView" ambiguous="YES" id="C4C-UR-6q5">
@@ -356,8 +345,66 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
+                            <stackView distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" ambiguous="YES" misplaced="YES" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ahg-TA-Bn9">
+                                <rect key="frame" x="183" y="274" width="85" height="21"/>
+                                <subviews>
+                                    <stackView distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5id-IK-yWT">
+                                        <rect key="frame" x="0.0" y="0.0" width="85" height="21"/>
+                                        <subviews>
+                                            <stackView distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wuU-SU-Wvg">
+                                                <rect key="frame" x="0.0" y="0.0" width="85" height="21"/>
+                                                <subviews>
+                                                    <stackView distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Yx-b8-hza">
+                                                        <rect key="frame" x="0.0" y="0.0" width="85" height="21"/>
+                                                        <subviews>
+                                                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5Hb-Hc-oUK">
+                                                                <rect key="frame" x="-6" y="-7" width="97" height="32"/>
+                                                                <buttonCell key="cell" type="push" title="Word追加" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="UVh-zY-BjV">
+                                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                                    <font key="font" metaFont="system"/>
+                                                                </buttonCell>
+                                                                <connections>
+                                                                    <action selector="AddWordSet:" target="sOX-ol-eHW" id="wbu-sb-ePo"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="5Hb-Hc-oUK" firstAttribute="top" secondItem="7Yx-b8-hza" secondAttribute="top" id="Xo3-5F-97q"/>
+                                                        </constraints>
+                                                        <visibilityPriorities>
+                                                            <integer value="1000"/>
+                                                        </visibilityPriorities>
+                                                        <customSpacing>
+                                                            <real value="3.4028234663852886e+38"/>
+                                                        </customSpacing>
+                                                    </stackView>
+                                                </subviews>
+                                                <visibilityPriorities>
+                                                    <integer value="1000"/>
+                                                </visibilityPriorities>
+                                                <customSpacing>
+                                                    <real value="3.4028234663852886e+38"/>
+                                                </customSpacing>
+                                            </stackView>
+                                        </subviews>
+                                        <visibilityPriorities>
+                                            <integer value="1000"/>
+                                        </visibilityPriorities>
+                                        <customSpacing>
+                                            <real value="3.4028234663852886e+38"/>
+                                        </customSpacing>
+                                    </stackView>
+                                </subviews>
+                                <visibilityPriorities>
+                                    <integer value="1000"/>
+                                </visibilityPriorities>
+                                <customSpacing>
+                                    <real value="3.4028234663852886e+38"/>
+                                </customSpacing>
+                            </stackView>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="Ahg-TA-Bn9" firstAttribute="top" secondItem="9s0-Qd-oHA" secondAttribute="top" constant="20" id="1lw-BP-yz0"/>
                             <constraint firstItem="uNt-od-xk9" firstAttribute="leading" secondItem="9s0-Qd-oHA" secondAttribute="leading" id="AAX-pG-gUy"/>
                             <constraint firstAttribute="bottom" secondItem="uNt-od-xk9" secondAttribute="bottom" id="CPc-CA-LzC"/>
                             <constraint firstAttribute="trailing" secondItem="uNt-od-xk9" secondAttribute="trailing" id="k9h-N2-St0"/>
@@ -370,19 +417,6 @@
                 <customObject id="O5d-sd-JNS" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="694" y="1010"/>
-        </scene>
-        <!--Other-->
-        <scene sceneID="QNe-LG-FxM">
-            <objects>
-                <viewController title="Other" id="4Hc-Qq-rsO" sceneMemberID="viewController">
-                    <view key="view" id="L0c-OP-Vp1">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </view>
-                </viewController>
-                <customObject id="Q8D-wr-ECG" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="476" y="1312"/>
         </scene>
     </scenes>
 </document>

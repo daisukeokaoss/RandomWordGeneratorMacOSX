@@ -45,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		046012F71C789911002A7A57 /* RandomWordGeneratorOSXApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = RandomWordGeneratorOSXApp.entitlements; sourceTree = "<group>"; };
 		70329CB51C47CE700053D788 /* WordPlotViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordPlotViewController.swift; sourceTree = "<group>"; };
 		70D4E0321C36E9E5001E0D5E /* RandomWordGeneratorOSXApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomWordGeneratorOSXApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70D4E0351C36E9E5001E0D5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -119,6 +120,7 @@
 		70D4E0341C36E9E5001E0D5E /* RandomWordGeneratorOSXApp */ = {
 			isa = PBXGroup;
 			children = (
+				046012F71C789911002A7A57 /* RandomWordGeneratorOSXApp.entitlements */,
 				70D4E0351C36E9E5001E0D5E /* AppDelegate.swift */,
 				70D4E0371C36E9E5001E0D5E /* ViewController.swift */,
 				70D4E0391C36E9E5001E0D5E /* Assets.xcassets */,
@@ -226,6 +228,12 @@
 				TargetAttributes = {
 					70D4E0311C36E9E5001E0D5E = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = X4JADE2386;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 					70D4E0421C36E9E6001E0D5E = {
 						CreatedOnToolsVersion = 7.2;
@@ -432,11 +440,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RandomWordGeneratorOSXApp/RandomWordGeneratorOSXApp.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = RandomWordGeneratorOSXApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = biz.nanosoftware.RandomWordGeneratorOSXApp;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = biz.nanosoftware.RandomWordGeneratorMacOSX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -444,11 +457,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RandomWordGeneratorOSXApp/RandomWordGeneratorOSXApp.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = RandomWordGeneratorOSXApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = biz.nanosoftware.RandomWordGeneratorOSXApp;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = biz.nanosoftware.RandomWordGeneratorMacOSX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
