@@ -47,7 +47,7 @@
 /* Begin PBXFileReference section */
 		046012F71C789911002A7A57 /* RandomWordGeneratorOSXApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = RandomWordGeneratorOSXApp.entitlements; sourceTree = "<group>"; };
 		70329CB51C47CE700053D788 /* WordPlotViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordPlotViewController.swift; sourceTree = "<group>"; };
-		70D4E0321C36E9E5001E0D5E /* RandomWordGeneratorOSXApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomWordGeneratorOSXApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		70D4E0321C36E9E5001E0D5E /* 発想生成２.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "発想生成２.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70D4E0351C36E9E5001E0D5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70D4E0371C36E9E5001E0D5E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		70D4E0391C36E9E5001E0D5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -110,7 +110,7 @@
 		70D4E0331C36E9E5001E0D5E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				70D4E0321C36E9E5001E0D5E /* RandomWordGeneratorOSXApp.app */,
+				70D4E0321C36E9E5001E0D5E /* 発想生成２.app */,
 				70D4E0431C36E9E6001E0D5E /* RandomWordGeneratorOSXAppTests.xctest */,
 				70D4E04E1C36E9E6001E0D5E /* RandomWordGeneratorOSXAppUITests.xctest */,
 			);
@@ -177,7 +177,7 @@
 			);
 			name = RandomWordGeneratorOSXApp;
 			productName = RandomWordGeneratorOSXApp;
-			productReference = 70D4E0321C36E9E5001E0D5E /* RandomWordGeneratorOSXApp.app */;
+			productReference = 70D4E0321C36E9E5001E0D5E /* 発想生成２.app */;
 			productType = "com.apple.product-type.application";
 		};
 		70D4E0421C36E9E6001E0D5E /* RandomWordGeneratorOSXAppTests */ = {
@@ -448,7 +448,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = biz.nanosoftware.RandomWordGeneratorMacOSX;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "発想生成２";
 				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
@@ -465,7 +465,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = biz.nanosoftware.RandomWordGeneratorMacOSX;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "発想生成２";
 				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
