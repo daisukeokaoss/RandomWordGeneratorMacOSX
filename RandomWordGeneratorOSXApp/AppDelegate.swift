@@ -17,6 +17,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     var setting = SaveLoadSetting()
 
 
+    @IBAction func ShowMainPage(sender: NSMenuItem) {
+       
+    }
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         // Insert code here to initialize your application

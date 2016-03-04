@@ -41,10 +41,11 @@
                                                 <action selector="hideOtherApplications:" target="Ady-hI-5gd" id="VT4-aY-XCT"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem title="Show All" id="Kd2-mp-pUS">
+                                        <menuItem title="New Window" id="Kd2-mp-pUS">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
-                                                <action selector="unhideAllApplications:" target="Ady-hI-5gd" id="Dhg-Le-xox"/>
+                                                <action selector="ShowMainPage:" target="Voe-Tx-rLC" id="79J-9h-TSX"/>
+                                                <segue destination="zOb-g1-G81" kind="show" id="TEX-1F-CMd"/>
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
@@ -102,10 +103,10 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="RandomWordGeneratorOSXApp" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="発想生成_" customModuleProvider="target"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="262" y="-2"/>
+            <point key="canvasLocation" x="216" y="-150"/>
         </scene>
         <!--Tab View Controller-->
         <scene sceneID="VoY-bN-Xj6">
@@ -143,7 +144,7 @@
         <!--WordGenerate-->
         <scene sceneID="yDU-D8-lEC">
             <objects>
-                <viewController title="WordGenerate" id="Rzv-Mo-ggS" customClass="WordPlotViewController" customModule="RandomWordGeneratorOSXApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="WordGenerate" id="Rzv-Mo-ggS" customClass="WordPlotViewController" customModule="発想生成_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="4gs-As-qyd">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -195,7 +196,7 @@
         <!--WordStore-->
         <scene sceneID="JuD-Q9-pID">
             <objects>
-                <viewController title="WordStore" id="R9w-g4-CyC" customClass="WordSelectionViewController" customModule="RandomWordGeneratorOSXApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="WordStore" id="R9w-g4-CyC" customClass="WordSelectionViewController" customModule="発想生成_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="696-9Q-2YO">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -318,7 +319,7 @@
         <!--Download-->
         <scene sceneID="23o-7z-c2I">
             <objects>
-                <viewController title="Download" id="sOX-ol-eHW" customClass="AddWordViewController2" customModule="RandomWordGeneratorOSXApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Download" id="sOX-ol-eHW" customClass="AddWordViewController2" customModule="発想生成_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="9s0-Qd-oHA">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>

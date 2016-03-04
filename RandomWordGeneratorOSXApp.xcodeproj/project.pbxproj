@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0461C4891C89FE3400316C9D /* ReOpenMainWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0461C4881C89FE3400316C9D /* ReOpenMainWindow.swift */; };
 		70329CB61C47CE700053D788 /* WordPlotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70329CB51C47CE700053D788 /* WordPlotViewController.swift */; };
 		70D4E0361C36E9E5001E0D5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D4E0351C36E9E5001E0D5E /* AppDelegate.swift */; };
 		70D4E0381C36E9E5001E0D5E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D4E0371C36E9E5001E0D5E /* ViewController.swift */; };
@@ -46,6 +47,7 @@
 
 /* Begin PBXFileReference section */
 		046012F71C789911002A7A57 /* RandomWordGeneratorOSXApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = RandomWordGeneratorOSXApp.entitlements; sourceTree = "<group>"; };
+		0461C4881C89FE3400316C9D /* ReOpenMainWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReOpenMainWindow.swift; sourceTree = "<group>"; };
 		70329CB51C47CE700053D788 /* WordPlotViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordPlotViewController.swift; sourceTree = "<group>"; };
 		70D4E0321C36E9E5001E0D5E /* 発想生成２.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "発想生成２.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70D4E0351C36E9E5001E0D5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				70D4E0371C36E9E5001E0D5E /* ViewController.swift */,
 				70D4E0391C36E9E5001E0D5E /* Assets.xcassets */,
 				70D4E03B1C36E9E6001E0D5E /* Main.storyboard */,
+				0461C4881C89FE3400316C9D /* ReOpenMainWindow.swift */,
 				70329CB51C47CE700053D788 /* WordPlotViewController.swift */,
 				70D4E0701C3845F3001E0D5E /* WordSelectionViewController.swift */,
 				70D4E0721C3A7449001E0D5E /* OneWordSetStorage.swift */,
@@ -297,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				70D4E06D1C3832FF001E0D5E /* MathematicalJpDefaultWord.swift in Sources */,
+				0461C4891C89FE3400316C9D /* ReOpenMainWindow.swift in Sources */,
 				70D4E0771C3A75E7001E0D5E /* SaveLoadSetting.swift in Sources */,
 				70D4E0741C3A7449001E0D5E /* OneWordSetStorage.swift in Sources */,
 				70D4E0691C3827A5001E0D5E /* AddWordViewController2.swift in Sources */,
