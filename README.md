@@ -7,3 +7,6 @@ Downloadタブから「word追加」ボタンを押すことにより、ワー�
 アイディア出しに強い味方。企画、作文、論文、ブログ、スピーチ、などを考えていて、
 アイディアに詰まった時はこのアプリを立ち上げて、ワードを生成してみてください。
 ワードから連想されることを突破口に、きっといいアイディアが浮かぶはずです。
+
+![ワード生成](https://github.com/daisukeokaoss/RandomWordGeneratorMacOSX/blob/master/Screen1.png)
+![ワード収集](https://github.com/daisukeokaoss/RandomWordGeneratorMacOSX/blob/master/Screen2.png)
